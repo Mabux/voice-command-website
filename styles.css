@@ -96,6 +96,39 @@ button:disabled {
     cursor: not-allowed;
 }
 
+.language-selector {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.language-selector label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#languageSelect {
+    width: 200px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.detected-language {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-top: 5px;
+    font-style: italic;
+}
+
 .visualizer {
     width: 100%;
     height: 60px;
@@ -196,5 +229,15 @@ button:disabled {
     
     #status {
         font-size: 16px;
+    }
+
+    .language-selector {
+        margin-bottom: 15px;
+    }
+
+    #languageSelect {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
     }
 }
