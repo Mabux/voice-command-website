@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Voice Command Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Voice Command Website</h1>
+        <div class="status-container">
+            <div id="status">Waiting to start listening...</div>
+            <div id="result" class="result-box">Say "hello", "start", or "next"</div>
+        </div>
+        <div class="controls">
+            <button id="startBtn">Start Listening</button>
+            <div id="visualization" class="visualizer"></div>
+        </div>
+        <div class="command-list">
+            <h2>Available Commands:</h2>
+            <ul>
+                <li>"Hello" - Greet the website</li>
+                <li>"Start" - Begin an action</li>
+                <li>"Next" - Move to the next item</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
