@@ -367,12 +367,18 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Recognition error:', event.error);
         statusElement.textContent = `Error: ${event.error}`;
         
-        // If permission denied, don't auto restart
-        if (event.error === 'not-allowed') {
+        // Handle specific errors that should stop auto-restart
+        if (event.error === 'not-allowed' || event.error === 'network') {
+            console.log('Stopping auto-restart due to:', event.error);
             autoRestart = false;
             isListening = false;
             startBtn.textContent = 'Start Listening';
             animateVisualizer(false);
+            
+            // For network errors, provide a helpful message
+            if (event.error === 'network') {
+                statusElement.textContent = 'Network disconnected. Click "Start Listening" to try again when connected.';
+            }
         }
     };
     
