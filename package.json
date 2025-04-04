@@ -4,11 +4,15 @@
   "description": "A website that responds to voice commands",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "echo 'Build step completed'"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "voice-command-website": "file:"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }

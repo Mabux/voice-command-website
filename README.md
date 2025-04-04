@@ -51,6 +51,51 @@ On mobile devices, the website will not automatically start listening to avoid p
 
 Simply open the `index.html` file in your web browser. No server is required.
 
+Alternatively, you can run the Node.js server:
+
+```bash
+npm start
+```
+
+This will start the server at http://localhost:3000.
+
+## Deployment
+
+### Deploying to Vercel
+
+This project is configured for easy deployment to Vercel. Follow these steps:
+
+1. Install the Vercel CLI:
+   ```bash
+   npm install -g vercel
+   ```
+
+2. Login to your Vercel account:
+   ```bash
+   vercel login
+   ```
+
+3. Deploy the project:
+   ```bash
+   vercel
+   ```
+
+4. Follow the prompts in the CLI to complete the deployment.
+
+Alternatively, you can deploy directly from the [Vercel Dashboard](https://vercel.com):
+
+1. Create an account on Vercel if you don't have one
+2. Create a new project and import your repository
+3. Vercel will automatically detect the project settings
+4. Click "Deploy" to publish your website
+
+### Accessing the API
+
+After deployment, your API will be available at:
+```
+https://your-vercel-domain.vercel.app/api
+```
+
 ## Extending the Website
 
 To add more voice commands, modify the `processCommand` function in `script.js` and add new handler functions as needed.
