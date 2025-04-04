@@ -1,0 +1,14 @@
+{
+  "name": "voice-command-website",
+  "version": "1.0.0",
+  "description": "A website that responds to voice commands",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "voice-command-website": "file:"
+  }
+}
